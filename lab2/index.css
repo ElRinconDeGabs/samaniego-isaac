@@ -56,5 +56,5 @@ body {
 #quest-4 p,
 #quest-5 p,
 #quest-6 p {
-  margin: 10px; /* Eliminar el margen predeterminado */
+  margin: 0px; /* Eliminar el margen predeterminado */
 }
