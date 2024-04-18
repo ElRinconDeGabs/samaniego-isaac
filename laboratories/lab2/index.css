@@ -1,0 +1,60 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6fd6ff, #2980b9);
+  /* Gradiente lineal de azul claro a azul oscuro */
+}
+
+/* Estilos comunes para las secciones de la página */
+#quest-1,
+#quest-2,
+#quest-3,
+#quest-4,
+#quest-5,
+#quest-6 {
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  /* Borde con un grosor de 1px y color negro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Sombra con desenfoque de 10px y color RGBA */
+  background-color: #f8f8ff;
+  /* Fondo blanco perla */
+}
+
+/* Estilos para el título en la segunda sección */
+#quest-1 #title {
+  display: flex;
+  justify-content: center;
+}
+#quest-2 #title {
+  display: flex;
+  justify-content: center;
+}
+#quest-3 #title {
+  display: flex;
+  justify-content: center;
+}
+#quest-4 #title {
+  display: flex;
+  justify-content: center;
+}
+#quest-5 #title {
+  display: flex;
+  justify-content: center;
+}
+#quest-6 #title {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos para los elementos de párrafo dentro de las secciones */
+#quest-1 p,
+#quest-2 p,
+#quest-3 p,
+#quest-4 p,
+#quest-5 p,
+#quest-6 p {
+  margin: 0px; /* Eliminar el margen predeterminado */
+}
