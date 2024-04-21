@@ -1,0 +1,140 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden; /* Evita que el video se desborde */
+}
+
+/* Estilos para el video de fondo */
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca el video detrás de todo el contenido */
+  overflow: hidden; /* Evita que el video se desborde */
+  object-fit: cover;
+}
+
+input {
+  padding: 10px;
+}
+
+/* Estilos para el contenedor de la tarjeta */
+.card {
+  background-color: #fff; /* Color de fondo de la tarjeta */
+  border-radius: 10px; /* Ajusta la esquina de la tarjeta */
+  box-shadow: 10px 10px 10px 10px rgba(240, 80, 80, 0.1); /* Agrega una sombra suave */
+  padding: 20px; /* Espaciado interno */
+  max-width: 400px; /* Ancho máximo de la tarjeta */
+  margin: 20px auto; /* Centra la tarjeta horizontalmente */
+  text-align: center; /* Centra el contenido del contenedor */
+  opacity: 80%;
+}
+
+/* Estilos para el formulario dentro de la tarjeta */
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre los elementos del formulario */
+}
+
+/* Estilos para las etiquetas del formulario */
+.card form label {
+  margin-bottom: 10px; /* Espaciado inferior */
+  padding-bottom: 10px;
+}
+
+/* Estilos para los botones del formulario */
+.card form button {
+  padding: 10px 20px; /* Espaciado interno */
+  margin-top: 10px; /* Espaciado superior */
+  border: none; /* Elimina el borde */
+  border-radius: 5px; /* Ajusta las esquinas del botón */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+}
+
+/* Cambia el color de fondo del botón al pasar el ratón */
+.card form button:hover {
+  background-color: #0056b3;
+}
+
+#answare {
+  padding: 15px;
+  margin: 15px;
+}
+
+/* Estilos para el botón de regreso */
+.return-btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #007bff; /* Color del enlace */
+}
+
+.return-btn:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.return-btn img {
+  width: 30px; /* Ajusta el ancho de la imagen según sea necesario */
+  height: auto; /* Altura automática para mantener la proporción */
+  vertical-align: middle; /* Alinea verticalmente la imagen */
+  margin-right: 5px; /* Añade un pequeño margen a la derecha para separar la imagen del texto */
+  float: left; /* Ajusta la imagen a la esquina izquierda */
+}
+
+/* Estilos para el navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar ul {
+  list-style-type: none; /* Elimina los estilos de lista */
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline-block; /* Muestra los elementos en línea */
+  margin-right: 10px; /* Espaciado entre los elementos */
+}
+
+.navbar ul li a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: white; /* Color de texto blanco */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 3px; /* Ajusta las esquinas */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.navbar ul li a:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Cambia el color de fondo al pasar el ratón */
+}
+#tittle-index {
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-top: 30vh; /* Ajusta el margen superior según sea necesario */
+  color: #fff;
+  font-size: 60px;
+}
+
+label{
+  padding: 10px;
+}

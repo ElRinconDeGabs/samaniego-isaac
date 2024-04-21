@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Laboratory n°3.1</title>
+  </head>
+  <body>
+    <section class="navbar"></section>
+      <nav class="navbar">
+        <ul>
+          <a href="../index.html" class="return-btn">
+            <img src="../assest/arrow-left.png" alt="Regresar al Index">
+          </a>
+          <li><a href="../Labs/lab3.2.html">Laboratory n°3.2</a></li>
+          <li><a href="../Labs/lab3.3.html">Laboratory n°3.3</a></li>
+          <li><a href="../Labs/lab3.4.html">Laboratory n°3.4</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="bg">
+      <video
+        src="../assest/Untitled video - Made with Clipchamp.mp4"
+        autoplay
+        muted
+        loop
+        class="Background">
+      </video>
+    </section>
+
+    <div class="card">
+      <div id="tittle">
+        <h1>Laboratory n°3.1</h1>
+      </div>
+
+      <section class="form">
+        <form id="qust1">
+          <label> Please input your text</label>
+          <input type="number" name="nums" id="nums" />
+          <button type="submit" onclick="qust1()">Check</button>
+          <button id="clearButton" type="button">Clear</button>
+        </form>
+        <div id="answare"></div>
+      </section>
+    </div>
+  </body>
+  <script src="../index.js"></script>
+</html>
