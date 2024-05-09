@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: black;
+  font-weight: bold;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#card {
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 5px 5px 5px 5px rgb(217, 217, 217);
+  
+ }
