@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+body {
+  background-color: #8589b8;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 90%;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  
+  padding-bottom: 100px;
+}
+
+.container .btn-menu,
+.logo {
+  float: left;
+  line-height: 100px;
+}
+
+.container .btn-menu label {
+  color: whitesmoke;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.container .menu {
+  float: right;
+  line-height: 100px;
+}
+
+.container a {
+  float: right;
+  text-decoration: none;
+  color: whitesmoke;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 25px;
+  padding-top: 25px;
+}
+
+.container a:hover {
+  border-bottom: 2px solid #c9ada7;
+  padding-bottom: 5px;
+}
+
+.container h2 {
+  padding-top: 25px;
+  color: whitesmoke;
+  font-size: 25px;
+}
+
+
+/* Formulario */
+#candidato {
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+#form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los elementos del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="text"],
+button {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+input[type="text"] {
+  width: calc(40% - 5px); /* Se resta 5px para dar espacio entre el input de color y el botón */
+  margin-right: 5px; /* Se agrega margen a la derecha del input de color */
+}
+
+button {
+  margin-top: 10px;
+  background-color: #5a2faa;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  width: calc(100% - 10px);
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Tarjetas (cards) */
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 200px;
+  min-height: 100px; /* Establece una altura mínima para la tarjeta */
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #333333;
+  overflow-wrap: break-word;
+}
+
+.card-color {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Añade un estilo para el contenido dentro de la tarjeta */
+.card-content {
+  flex-grow: 1; /* Permite que el contenido crezca dentro de la tarjeta */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gráfica */
+.chart-bar {
+  position: relative;
+  height: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+  padding: 10px;
+}
+
+.chart-bar::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+.chart-bar span {
+  z-index: 1;
+  padding-right: 10px;
+  font-size: 14px; 
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
+#chart-container {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: #caaeae86;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+}
