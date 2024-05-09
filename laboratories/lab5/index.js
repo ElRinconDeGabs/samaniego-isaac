@@ -14,10 +14,10 @@
       App.bindEvents();
     },
     bindEvents() {
-      App.htmlElements.form.addEventListener("submit", App.handlers.handleForm);
+      App.htmlElements.form.addEventListener("submit", App.handlers.onFormSubmit);
     },
     handlers: {
-      handleForm(e) {
+      onFormSubmit(e) {
         e.preventDefault();
         const candi = e.target.candi.value;
         const color = e.target.color.value;
@@ -32,9 +32,9 @@
         App.renderChart();
       },
       handleDelete(index) {
-        App.data.candidates.splice(index, 1); // Eliminar al candidato del arreglo
-        App.render(); // Volver a renderizar las tarjetas
-        App.renderChart(); // Volver a renderizar la gráfica
+        App.data.candidates.splice(index, 1); 
+        App.render();
+        App.renderChart();
       },
     },
     methods: {
