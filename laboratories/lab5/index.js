@@ -32,7 +32,7 @@
         App.renderChart();
       },
       handleDelete(index) {
-        App.data.candidates.splice(index, 1); 
+          
         App.render();
         App.renderChart();
       },

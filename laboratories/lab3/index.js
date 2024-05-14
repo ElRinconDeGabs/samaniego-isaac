@@ -99,9 +99,10 @@ const quest4 = () => {
         return false;
       }
     }
+    console.log(prm)
     return true;
   };
-
+  
   document.getElementById("formQuest4").addEventListener("submit", function (event) {
     event.preventDefault();
     let prm = parseInt(document.getElementById("prm").value);
