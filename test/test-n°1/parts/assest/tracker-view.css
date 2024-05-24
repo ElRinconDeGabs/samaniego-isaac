@@ -1,0 +1,116 @@
+/* Reseteo básico para eliminar márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #e0f7fa;
+  }
+  
+  .nav-bar {
+    background-color: #00796b;
+    padding: 6px;
+  }
+  
+  .nav-bar nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-bar nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-bar nav a:hover {
+    color: #004d40;
+  }
+  
+  .personal-information {
+    padding: 20px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .form {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .income-expenses {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .income-expenses h3 {
+    margin-bottom: 10px;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form input[type="number"],
+  .form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00796b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #004d40;
+  }
+  
+  .record-table,
+  .chart {
+    flex: 1;
+  }
+  
+  .record-table,
+  .chart .content {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .record-table h3,
+  .chart .content h3 {
+    margin-bottom: 10px;
+  }
+  
+  .record-table ul {
+    list-style: none;
+  }
+  
+  .record-table ul li {
+    margin-bottom: 5px;
+  }
+  
