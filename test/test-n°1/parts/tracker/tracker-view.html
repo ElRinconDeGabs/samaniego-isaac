@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assest/tracker-view.css" />
+    <title>Tracker Finance 💵</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <section class="nav-bar">
+      <div class="container">
+        <nav>
+          <a href="profile.html">Profile</a>
+          <a href="logout.html" id="log-out">Log-out</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Personal Information -->
+    <section class="personal-information">
+      <div class="container">
+        <div id="user-info">
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content">
+      <div class="container">
+        <section class="form">
+          <div class="container">
+            <h3>Income - Expenses</h3>
+            <form id="tracker-form">
+              <label>Enter your income and expense records</label>
+              <input
+                type="number"
+                name="value"
+                id="value"
+                placeholder="$1000"
+              />
+              <select name="option" id="option">
+                <option>Select option</option>
+                <option value="income">Income</option>
+                <option value="Expenses">Expenses</option>
+              </select>
+              <button type="submit" id="submit">Record</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Record Table -->
+        <section class="record-table">
+          <div class="container">
+            <h3>Record Table</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Type</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody id="record-table-body">
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Chart Section -->
+        <section class="chart">
+          <div class="container">
+            <h3>Difference Chart</h3>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <script src="tracker-view.js"></script>
+  </body>
+</html>
