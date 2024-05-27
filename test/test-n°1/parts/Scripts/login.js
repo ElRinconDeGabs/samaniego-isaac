@@ -39,7 +39,7 @@
         }
 
         App.methods.saveLoginStatus(username);
-        window.location.href = "../tracker/tracker-view.html";
+        window.location.href = "tracker-view.html";
       },
     },
     methods: {
@@ -65,5 +65,12 @@
       },
     },
   };
-  App.init();
+  document.addEventListener("DOMContentLoaded", () => {
+    const loggedInUser = localStorage.getItem("loggedInUser");
+    if (loggedInUser) {
+      window.location.href = "tracker-view.html";
+    } else {
+      App.init();
+    }
+  });
 })();

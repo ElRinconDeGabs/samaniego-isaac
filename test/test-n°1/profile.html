@@ -7,13 +7,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assest/style.css" />
-    <title>Register 👮🏻</title>
+    <link rel="stylesheet" href="parts/assest/style.css" />
+    <title>Profile 🧔🏻</title>
   </head>
   <body>
     <section id="registration">
       <div class="container">
-        <h2>User registration</h2>
+        <h2>User Information</h2>
         <form action="" id="registration-form">
           <label for="name">Name</label>
           <input
@@ -21,15 +21,13 @@
             name="name"
             id="name"
             placeholder="Name"
-            required
           />
           <label for="last-name">Last name</label>
           <input
             type="text"
             name="last-name"
             id="last-name"
-            placeholder="Last Name"
-            required
+            placeholder="last-name"
           />
           <label for="username">Username</label>
           <input
@@ -37,7 +35,7 @@
             name="username"
             id="username"
             placeholder="Username"
-            required
+            disabled
           />
           <div id="message-user">
             <p id="msg-mistake-user"></p>
@@ -48,19 +46,14 @@
             name="pass"
             id="pass"
             placeholder="Password"
-            required
           />
           <div id="message-pass">
             <p id="msg-mistake-pass"></p>
           </div>
-          <button type="submit" id="submit">Sign-up</button>
+          <button type="submit" id="submit">Update</button>
         </form>
-        <div id="sign-up">
-          <span>Have an account?</span>
-          <a href="../account/login.html">Login</a>
-        </div>
       </div>
     </section>
-    <script src="sign-up.js"></script>
   </body>
+  <script src="parts/Scripts/profile.js"></script>
 </html>
