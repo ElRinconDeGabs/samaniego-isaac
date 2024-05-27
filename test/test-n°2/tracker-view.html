@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="parts/assest/tracker-view.css" />
+  <title>Tracker Finance 💵</title>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <section class="nav-bar">
+      <nav>
+        <a href="profile.html">Profile</a>
+        <button type="submit" id="logout-button">Log-out</button>
+      </nav>
+  </section>
+
+  <!-- Personal Information -->
+  <section class="personal-information">
+    <div class="container">
+      <div id="user-info"></div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="content">
+    <div class="container">
+      <section class="form">
+        <div class="container">
+          <h3>Finance Tracker</h3>
+          <form id="tracker-form">
+            <label>Enter your income and expense records</label>
+            <input
+              type="number"
+              name="value"
+              id="value"
+              placeholder="$1000"
+            />
+            <select name="option" id="option">
+              <option value=" " disabled selected>Select option</option>
+              <option value="income">Income</option>
+              <option value="expenses">Expenses</option>
+            </select>
+            <button type="submit" id="submit">Record</button>
+          </form>
+            
+        </div>
+      </section>
+
+      <!-- No Data Message -->
+      <div id="no-data" style="display: none;">
+        <img src="parts/assest/corrupted-file.png" alt="No data available">
+      </div>
+
+      <!-- Record Table -->
+      <section class="record-table" id="record-table">
+        <div class="container">
+          <h3>Record Table</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody id="record-table-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Chart Section -->
+      <section id="chart-container">
+        <h2>Tracker Finance Chart</h2>
+        <div id="bar-chart">
+          <div class="bar" id="income-bar"></div>
+          <div class="bar" id="expense-bar"></div>
+        </div>
+        <div id="chart-legend">
+          <div>
+            <span class="legend-color" id="income-color"></span>Income
+          </div>
+          <div>
+            <span class="legend-color" id="expense-color"></span>Expenses
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <button id="logout-button2">Log-out</button>
+
+  <script src="parts/Scripts/tracker-view.js"></script>
+</body>
+</html>
