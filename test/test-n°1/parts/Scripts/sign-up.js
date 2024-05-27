@@ -10,24 +10,29 @@
       passInput: document.getElementById("pass"),
     },
     init() {
-      this.bindEvents();
-      this.showUsersInConsole();
-      this.htmlElements.userInput.addEventListener("input", () => {
-        App.methods.showErrorMessage(
-          App.htmlElements.messageUser,
-          App.htmlElements.msgMistakeUser,
-          "",
-          true
-        );
-      });
-      this.htmlElements.passInput.addEventListener("input", () => {
-        App.methods.showErrorMessage(
-          App.htmlElements.messagePass,
-          App.htmlElements.msgMistakePass,
-          "",
-          true
-        );
-      });
+      const loggedInUser = localStorage.getItem("loggedInUser");
+      if (loggedInUser) {
+        window.location.href = "tracker-view.html";
+      } else {
+        this.bindEvents();
+        this.showUsersInConsole();
+        this.htmlElements.userInput.addEventListener("input", () => {
+          App.methods.showErrorMessage(
+            App.htmlElements.messageUser,
+            App.htmlElements.msgMistakeUser,
+            "",
+            true
+          );
+        });
+        this.htmlElements.passInput.addEventListener("input", () => {
+          App.methods.showErrorMessage(
+            App.htmlElements.messagePass,
+            App.htmlElements.msgMistakePass,
+            "",
+            true
+          );
+        });
+      }
     },
     bindEvents() {
       this.htmlElements.form.addEventListener(
@@ -64,7 +69,7 @@
 
         App.methods.saveToLocalStorage(data);
         App.showUsersInConsole();
-        window.location.href = "../account/login.html"; 
+        window.location.href = "login.html"; 
       },
     },
     methods: {
