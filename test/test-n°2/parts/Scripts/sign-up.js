@@ -65,7 +65,7 @@
           return;
         }
 
-        data.pass = App.methods.simpleHash(data.pass);
+        data.password = App.methods.simpleHash(data.pass); // Cambiado 'pass' a 'password'
 
         App.methods.saveToLocalStorage(data);
         App.showUsersInConsole();

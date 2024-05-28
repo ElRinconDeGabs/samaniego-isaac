@@ -226,9 +226,7 @@ button#logout-button2 {
   color: white;
   font-size: 16px;
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
+  display: none;
 }
 
 button#logout-button2:hover {

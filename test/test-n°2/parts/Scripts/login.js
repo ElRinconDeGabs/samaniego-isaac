@@ -33,7 +33,7 @@
 
         const hashedPassword = App.methods.simpleHash(password);
 
-        if (user.pass !== hashedPassword) {
+        if (user.password !== hashedPassword) {
           App.methods.showErrorMessage("Contraseña incorrecta.");
           return;
         }
@@ -65,6 +65,7 @@
       },
     },
   };
+
   document.addEventListener("DOMContentLoaded", () => {
     const loggedInUser = localStorage.getItem("loggedInUser");
     if (loggedInUser) {

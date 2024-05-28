@@ -6,7 +6,7 @@
       hash = (hash << 5) - hash + chr;
       hash |= 0;
     }
-    return hash;
+    return hash.toString();
   }
 
   const App = {
@@ -42,12 +42,16 @@
       onFormSubmit(e) {
         e.preventDefault();
 
-        const name = this.htmlElements.name.value;
-        const lname = this.htmlElements.lname.value;
-        const username = this.htmlElements.username.value;
-        let password = this.htmlElements.password.value;
+        const name = this.htmlElements.name.value.trim();
+        const lname = this.htmlElements["last-name"].value.trim();
+        const username = this.htmlElements.username.value.trim();
+        let password = this.htmlElements.password.value.trim();
 
         if (!name || !lname || !username || !password) {
+          this.methods.showErrorMessage(
+            this.htmlElements.msgMistakeUser,
+            "Todos los campos son obligatorios."
+          );
           return;
         }
 
@@ -63,7 +67,7 @@
 
         const updatedUser = {
           name: name,
-          lname: lname,
+          ["last-name"]: lname,
           username: username,
           password: password,
         };
