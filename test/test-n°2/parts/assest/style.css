@@ -1,0 +1,116 @@
+/* Reseteo básico para eliminar márgenes y paddings por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #e0f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilo del contenedor del formulario */
+.container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: -20px 16px 8px rgba(0, 0, 0, 0.15);
+  width: 80vw;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #00796b;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #00796b;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #b2dfdb;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  background-color: #e0f2f1;
+  color: #00796b;
+}
+
+form input[type="text"]::placeholder,
+form input[type="password"]::placeholder {
+  color: #80cbc4;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+  outline: none;
+  border-color: #00796b;
+  background-color: #ffffff;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00796b;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #004d40;
+}
+
+/* Estilo del enlace de registro */
+.container a {
+  display: block;
+  margin-top: 10px;
+  color: #00796b;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 70%;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+span {
+  opacity: 40%;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: red;
+  padding-bottom: 10px;
+}
