@@ -1,0 +1,10 @@
+{
+  "name": "lab8",
+  "module": "app.js",
+  "type": "module",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
