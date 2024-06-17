@@ -1,26 +1,22 @@
-import express from 'express';
-import cors from 'cors';
+const express = require('express');
+const cors = require('cors');
+const path = require('path');
+const fibonacciRoute = require('./routes/fibonacci');
 
 const app = express();
 const port = 3000;
 
-app.use(cors());
+app.use(express.static(path.join(__dirname)));
 
-const fibonacci = (num) => {
-  let result = [0, 1];
-  for (let i = 2; i < num; i++) {
-    result.push(result[i - 1] + result[i - 2]);
-  }
-  return result.slice(0, num);
-};
+// Rutas
+app.use('/api', fibonacciRoute); 
 
-app.get('/fibonacci/:number', (req, res) => {
-  const num = parseInt(req.params.number, 10);
-  if (isNaN(num) || num < 1) {
-    return res.status(400).json({ error: 'Invalid number' });
-  }
-  const fibArray = fibonacci(num);
-  res.json(fibArray);
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.use((req, res, next) => {
+  res.status(404).send('404 - Not Found');
 });
 
 app.listen(port, () => {
