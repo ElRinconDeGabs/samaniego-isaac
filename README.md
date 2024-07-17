@@ -12,7 +12,7 @@ Hi! I'm Isaac Samaneigo 😁 and during this course, I want to 😶‍🌫️:
 1. **Get better at programming:** Learn more about different languages and tools.
 2. **Work in teams:** Collaborate and learn from others.
 3. **Good practices:** Write clean and well-structured code.
-4. **Explore new tech:** Experiment with new tool s.
+4. **Explore new tech:** Experiment with new tools.
 5. **Interesting projects:** Work on fun and challenging stuff.
 
 Documentation  for this course 🧾: https://github.com/ErickAgrazal/2024-SEMI-DESIX-G1 👈🏻
