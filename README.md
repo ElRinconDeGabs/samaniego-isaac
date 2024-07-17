@@ -15,7 +15,7 @@ Hi! I'm Isaac Samaneigo 😁 and during this course, I want to 😶‍🌫️:
 4. **Explore new tech:** Experiment with new tool s.
 5. **Interesting projects:** Work on fun and challenging stuff.
 
-Docummentation for this course 🧾: https://github.com/ErickAgrazal/2024-SEMI-DESIX-G1 👈🏻
+Documentation  for this course 🧾: https://github.com/ErickAgrazal/2024-SEMI-DESIX-G1 👈🏻
 
 <br>
 
